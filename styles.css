@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Franklin:wght@300;600;700&family=Mouse+Memoirs&family=Permanent+Marker&family=Playball&family=Square+Peg&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.main-container{
+    
+    margin: 85px auto 60px;
+}
+
+.logo{
+    width: 52px;
+    display: block;
+    margin: 0 auto 40px;
+}
+
+h1{
+    text-align: center;
+    color: var(--Gray);
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+span{
+    font-weight: 700;
+    color: var(--VeryDarkBlue)
+}
+
+.suscribe{
+    text-align: center;
+    font-size: 0.65em;
+    margin-bottom: 36px;
+}
+
+form{
+    text-align: center;
+   
+    width: 282px;
+    margin: auto;
+}
+
+input[type="email"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 32px;
+    margin-bottom: 3px;
+    border: 1px solid var(--Blue);
+    padding-left: 24px;
+}
+
+input[type="email"]:focus{
+    outline: none;
+}
+
+#error{
+    color: var(--LightRed);
+    font-style: italic;
+    font-size: 0.65em;
+    text-align: center;
+    visibility: hidden;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: var(--Blue);
+    height: 40px;
+    border-radius: 32px;
+    color: var(--PaleBlue);
+    border: none;
+    margin-bottom: 70px;
+    box-shadow: 3px 3px 5px var(--Blue);
+    font-weight: 700;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.images{
+    width: 322px;
+  
+    display: block;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.social-container{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto 30px;
+    width: 150px;
+
+}
+
+.icon-container{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--Blue);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    fill: var(--Blue);
+}
+
+.icon-container:hover{
+    background-color: var(--Blue);
+    fill: var(--PaleBlue);
+}
+
+.icon{
+    width: 1em;
+    height: 1em;
+    
+    
+}
+
+.copy{
+    text-align: center;
+    color: var(--Gray);
+    font-size: 0.6em;
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+/*---------------desltop-----------*/
+@media screen and (min-width: 700px) {
+    .logo{
+        width: 96px;
+        display: block;
+        margin: 0 auto 60px;
+    }
+    h1{
+        text-align: center;
+        color: var(--Gray);
+     
+        font-size: 2.5em;
+        margin-bottom: 16px;
+    }
+    .suscribe{
+        font-size: 1.05em;
+        font-weight: 300;
+    }
+    form{
+        width: 638px;
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type="email"]{
+        width: 420px;
+        height: 55px;
+        font-size: 0.8em;
+    }
+    #error{
+        text-align: left;
+        padding-left: 24px;
+        font-size: 0.65em;
+    }
+    input[type="submit"]{
+        width: 200px;
+        height: 55px;
+        margin-bottom: 90px;
+        font-size: 0.8em;
+    }
+    .images{
+        width: 640px;
+        margin-bottom: 74px;
+    }
+    
+    
+}
